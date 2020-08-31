@@ -1,0 +1,25 @@
+{{ $src     := "" }}
+{{ $zoom    := "" }}
+{{ $caption := "" }}
+{{ $alt     := "" }}
+
+{{ if .IsNamedParams }}
+  {{ $src     = .Get "src" }}
+  {{ $zoom    = .Get "zoom" }}
+  {{ $caption = .Get "caption" }}
+  {{ $alt     = .Get "alt" }}
+  {{if not $src}}
+    {{$src = $zoom }}
+  {{end}}
+{{ else }}
+  {{ $src = .Get 0 }}
+  {{ $alt = .Get 1 }}
+{{end}}
+
+<figure>
+  {{if $zoom}}<a href="{{$zoom}}" target="_blank">{{end}}
+  <img src="{{$src}}" alt="{{$alt}}"/>
+  <figcaption>{{$caption}}</figcaption>
+  {{if $zoom}}</a>{{end}}
+</figure>
+

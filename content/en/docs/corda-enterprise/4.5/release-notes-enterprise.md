@@ -9,7 +9,7 @@ tags:
 - notes
 - enterprise
 title: Corda Enterprise release notes
-weight: 1
+weight: 2
 
 ---
 
