@@ -15,7 +15,7 @@ weight: 20
    figure 
 	src="images/richard.jpg"
 	zoom="images/richard_big.jpg"
-	caption="Richard the cat, lying on the bed. © John McFarland Campbell"
+	figcaption="Richard the cat, lying on the bed. © John McFarland Campbell"
 	alt="cat on bed" 
 %}}
 
@@ -27,31 +27,31 @@ weight: 20
 
 ![richard the cat](images/richard_big.jpg)
 
-## `figure` - with `src`, `zoom`, and `caption`
+## `figure` - with `src`, `zoom`, and `figcaption`
 
 {{% 
    figure 
 	src="images/richard.jpg"
 	zoom="images/richard_big.jpg"
-	caption="Richard the cat, lying on the bed. © John McFarland Campbell"
+	figcaption="Richard the cat, lying on the bed. © John McFarland Campbell"
 	alt="cat on bed" 
 %}}
 
-## `figure` - with `zoom`, and `caption`
+## `figure` - with `zoom`, and `figcaption`
 
-{{< 
+{{% 
    figure 
 	zoom="images/richard_big.jpg"
-	caption="Richard the cat, lying on the bed. © John McFarland Campbell"
+	figcaption="Richard the cat, lying on the bed. © John McFarland Campbell"
 	alt="cat on bed" 
->}}
+%}}
 
-## `figure` - with `src`, and `caption`
+## `figure` - with `src`, and `figcaption`
 
 {{% 
    figure 
 	src="images/richard.jpg"
-	caption="Richard the cat, lying on the bed. © John McFarland Campbell"
+	figcaption="Richard the cat, lying on the bed. © John McFarland Campbell"
 	alt="cat on bed" 
 %}}
 
@@ -89,4 +89,3 @@ Please don't ever do this in production.
 	"images/richard.jpg"
 	"cat on bed" 
 %}}
-

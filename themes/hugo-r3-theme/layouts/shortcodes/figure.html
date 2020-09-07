@@ -1,13 +1,18 @@
-{{ $src     := "" }}
-{{ $zoom    := "" }}
-{{ $caption := "" }}
-{{ $alt     := "" }}
-
+{{ $src        := "" }}
+{{ $zoom       := "" }}
+{{ $figcaption := "" }}
+{{ $alt        := "" }}
+{{ $title      := "" }}
+{{ $width      := "" }}
+{{ $height     := "" }}
 {{ if .IsNamedParams }}
-  {{ $src     = .Get "src" }}
-  {{ $zoom    = .Get "zoom" }}
-  {{ $caption = .Get "caption" }}
-  {{ $alt     = .Get "alt" }}
+  {{ $src        = .Get "src" }}
+  {{ $zoom       = .Get "zoom" }}
+  {{ $figcaption = .Get "figcaption" }}
+  {{ $alt        = .Get "alt" }}
+  {{ $title      = .Get "title" }}
+  {{ $width      = .Get "width" }}
+  {{ $height     = .Get "height" }}
   {{if not $src}}
     {{$src = $zoom }}
   {{end}}
@@ -15,11 +20,9 @@
   {{ $src = .Get 0 }}
   {{ $alt = .Get 1 }}
 {{end}}
-
 <figure>
   {{if $zoom}}<a href="{{$zoom}}" target="_blank">{{end}}
-  <img src="{{$src}}" alt="{{$alt}}"/>
-  <figcaption>{{$caption}}</figcaption>
+  <img src="{{$src}}" alt="{{$alt}}"{{if $title  }} title="{{$title}}"{{end}}{{if $width}} width="{{$width}}"{{end}}{{if $height }} height="{{$height}}"{{end}}/>
+  {{if $figcaption }}<figcaption>{{$figcaption}}</figcaption>{{end}}
   {{if $zoom}}</a>{{end}}
 </figure>
-
