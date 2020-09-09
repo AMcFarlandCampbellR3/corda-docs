@@ -16,7 +16,7 @@ weight: 20
 	src="images/richard.jpg"
 	zoom="images/richard_big.jpg"
 	figcaption="Richard the cat, lying on the bed. © John McFarland Campbell"
-	alt="cat on bed" 
+	alt="cat on bed"
 %}}
 
 ## Main as standard Markdown

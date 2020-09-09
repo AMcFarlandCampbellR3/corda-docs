@@ -5,6 +5,7 @@
 {{ $title      := "" }}
 {{ $width      := "" }}
 {{ $height     := "" }}
+{{ $align      := "" }}
 {{ if .IsNamedParams }}
   {{ $src        = .Get "src" }}
   {{ $zoom       = .Get "zoom" }}
@@ -13,6 +14,7 @@
   {{ $title      = .Get "title" }}
   {{ $width      = .Get "width" }}
   {{ $height     = .Get "height" }}
+  {{ $align      = .Get "align" }}
   {{if not $src}}
     {{$src = $zoom }}
   {{end}}
@@ -22,7 +24,7 @@
 {{end}}
 <figure>
   {{if $zoom}}<a href="{{$zoom}}" target="_blank">{{end}}
-  <img src="{{$src}}" alt="{{$alt}}"{{if $title  }} title="{{$title}}"{{end}}{{if $width}} width="{{$width}}"{{end}}{{if $height }} height="{{$height}}"{{end}}/>
+  <img src="{{$src}}" alt="{{$alt}}"{{if $title  }} title="{{$title}}"{{end}}{{if $width}} width="{{$width}}"{{end}}{{if $height }} height="{{$height}}"{{end}}{{if $align}} align="{{$align}}"{{end}}/>
   {{if $figcaption }}<figcaption>{{$figcaption}}</figcaption>{{end}}
   {{if $zoom}}</a>{{end}}
 </figure>
