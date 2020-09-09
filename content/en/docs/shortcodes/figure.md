@@ -1,10 +1,9 @@
 ---
 date: '2020-04-07T12:00:00Z'
 menu:
-  corda-enterprise-4-5:
-    identifier: "figure-shortcode-test"
+  shortcode-tests:
+    identifier: "shortcode-tests-figure"
     name: "figure test"
-    parent: shortcode-tests
 title: figure shortcode test 
 weight: 20
 ---
@@ -89,3 +88,4 @@ Please don't ever do this in production.
 	"images/richard.jpg"
 	"cat on bed" 
 %}}
+### 

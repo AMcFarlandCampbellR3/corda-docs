@@ -1,10 +1,9 @@
 ---
 date: '2020-04-07T12:00:00Z'
 menu:
-  corda-enterprise-4-5:
-    identifier: "shortcode-test"
+  shortcode-tests:
+    identifier: "shortcode-test-codesample"
     name: "codesample shortcode test"
-    parent: shortcode-tests
 title: codesample shortcode test 
 weight: 10
 ---
