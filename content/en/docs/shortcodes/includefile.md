@@ -3,12 +3,12 @@ date: '2020-04-07T12:00:00Z'
 menu:
   shortcode-tests:
     identifier: "shortcode-tests-includefile"
-    name: "Includefile test"
-title: Includefile test 
+    name: "includefile shortcode test"
+title: includefile shortcode test 
 weight: 30
 ---
 
-# `includefile` test
+# `includefile` shortcode test
 
 ## Trivial `includefile`
 

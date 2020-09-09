@@ -3,7 +3,7 @@ date: '2020-04-07T12:00:00Z'
 menu:
   shortcode-tests:
     identifier: "shortcode-tests-figure"
-    name: "figure test"
+    name: "figure shortcode test"
 title: figure shortcode test 
 weight: 20
 ---
