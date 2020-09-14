@@ -88,4 +88,3 @@ Please don't ever do this in production.
 	"images/richard.jpg"
 	"cat on bed" 
 %}}
-### 
