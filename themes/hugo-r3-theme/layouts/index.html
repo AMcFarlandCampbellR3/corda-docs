@@ -4,6 +4,50 @@
 
 
     <body>
+<<<<<<< HEAD
+=======
+      <!-- https://www.w3schools.com/howto/howto_js_tabs.asp -->
+          <script type="text/javascript">
+            function openSection(section) {
+  // Declare all variables
+  var i, tabcontent, tablinks;
+
+  // Get all elements with class="tabcontent" and hide them
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+
+  // Get all elements with class="tablinks" and remove the class "active"
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+
+  // Show the current tab, and add an "active" class to the button that opened the tab
+  document.getElementById(section).style.display = "block";
+  document.getElementById(section + "Button").className += " active";
+  // set a cookie to record the selected tab
+  document.cookie = "selectedTab = " + section;
+}
+function getCookie(cname) {
+  var name = cname + "=";
+  var decodedCookie = decodeURIComponent(document.cookie);
+  var ca = decodedCookie.split(';');
+  for(var i = 0; i <ca.length; i++) {
+    var c = ca[i];
+    while (c.charAt(0) == ' ') {
+      c = c.substring(1);
+    }
+    if (c.indexOf(name) == 0) {
+      return c.substring(name.length, c.length);
+    }
+  }
+  return "";
+}
+          </script>
+      <!-- Most of this content should probably be in content/en/_index.md -->
+>>>>>>> upstream/EG-4008
         <noscript>You need to enable javascript for this site</noscript>
         {{- partial "cookie-banner.html" . -}}
         {{- partial "header.html" . -}}
@@ -652,8 +696,15 @@
     <h2>Security Advisories</h2>
   </div>-->
   <script type="text/javascript">
+<<<<<<< HEAD
   if (getCookie('selectedTab')) {
     openSection(getCookie('selectedTab'))
+=======
+  if (document.cookie) {
+    var selectedTab;
+    selectedTab = getCookie('selectedTab');
+    openSection(selectedTab)
+>>>>>>> upstream/EG-4008
   }
 </script>
         </main>
