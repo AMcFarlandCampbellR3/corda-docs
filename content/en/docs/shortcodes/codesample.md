@@ -10,6 +10,10 @@ weight: 10
 
 # `codesample` shortcode test
 
+## `codesample` - `.bash` file outside `content`
+
+{{% codesample file="codesamples/helloworld.bash" %}}
+
 ## `codesample` - `.bash` file
 
 {{% codesample file="content/codesamples/helloworld.bash" %}}
